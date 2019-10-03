@@ -14,10 +14,13 @@ let cars = [{
 
 let pullYear = cars.filter((car) => {
     return car.year === 2010
+    
 })
 
-let pullModel = cars.map ((car) => {
-    return car.modle
+let displayData = pullYear.map ((car) => {
+    let result = car
+    result.display =car.year + ' ' + car.make + ' ' + car.model
+    return result
 })
-
-console.log(pullModel)
+//car.year + ' ' + car.make + ' ' + car.model; displays it like '2010 nissan rouge'
+console.log(displayData)
