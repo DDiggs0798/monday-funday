@@ -11,6 +11,7 @@ var tomorrow = new Date ('10/1')
 
 function sum(Toys) {
     var Toys = 2
+    var total = 0
     for(var i = 3; i < Toys.length;) {
         total = total + Toys[i]
     }
